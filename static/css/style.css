@@ -584,7 +584,10 @@ a { color: inherit; text-decoration: none; }
     flex-direction: column;
     gap: 0.5rem;
     font-size: 0.95rem;
+    margin-bottom: 0.75rem;
 }
+
+.legal-item ul:last-child { margin-bottom: 0; }
 
 .legal-item li {
     position: relative;
@@ -601,6 +604,17 @@ a { color: inherit; text-decoration: none; }
     border-radius: 999px;
     background: var(--accent);
 }
+
+.legal-item a {
+    color: var(--accent);
+    font-weight: 500;
+    border-bottom: 1px solid var(--accent-light);
+    transition: border-color 0.2s;
+}
+
+.legal-item a:hover { border-color: var(--accent); }
+
+.legal-item strong { color: var(--ink); font-weight: 600; }
 
 .legal-actions {
     display: flex;

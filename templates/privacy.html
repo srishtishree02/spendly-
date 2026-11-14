@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+<section class="legal-hero">
+    <div class="legal-hero-inner">
+        <div class="hero-badge">Legal</div>
+        <h1 class="legal-title">Privacy <em>Policy</em></h1>
+        <p class="legal-subtitle">
+            Your spending is personal. Here's what we collect, why we collect it,
+            and how we keep it safe.
+        </p>
+        <p class="legal-updated">Last updated: November 2026</p>
+    </div>
+</section>
+
+<section class="legal-body">
+    <article class="legal-card">
+        <p class="legal-intro">
+            This Privacy Policy explains how Spendly handles your information when you use
+            our personal expense tracking application. By using Spendly, you agree to the
+            practices described here.
+        </p>
+
+        <div class="legal-item">
+            <span class="legal-num">01</span>
+            <div>
+                <h2>Data We Collect</h2>
+                <p>We only collect what we need to run the service:</p>
+                <ul>
+                    <li><strong>Account details</strong> such as your name and email address.</li>
+                    <li><strong>Expense data</strong> you enter, including amounts, categories, dates and descriptions.</li>
+                    <li><strong>Basic technical data</strong> such as browser type and session information, used to keep you signed in.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="legal-item">
+            <span class="legal-num">02</span>
+            <div>
+                <h2>How We Use Your Data</h2>
+                <p>Your information is used to:</p>
+                <ul>
+                    <li>Create and manage your Spendly account.</li>
+                    <li>Store your expenses and show you summaries and category breakdowns.</li>
+                    <li>Keep the service secure and fix problems.</li>
+                    <li>Contact you about important changes to the service or these policies.</li>
+                </ul>
+                <p>We never sell your personal or financial data, and we do not use it for advertising.</p>
+            </div>
+        </div>
+
+        <div class="legal-item">
+            <span class="legal-num">03</span>
+            <div>
+                <h2>Data Storage</h2>
+                <p>
+                    Your data is stored in a secured database, and passwords are stored only in
+                    hashed form, never as plain text. We keep your data for as long as your account
+                    is active. You can edit or delete your expenses at any time, and if you delete
+                    your account, your associated data will be removed.
+                </p>
+                <p>
+                    No method of storage is completely secure, but we take reasonable measures to
+                    protect your information from unauthorised access.
+                </p>
+            </div>
+        </div>
+
+        <div class="legal-item">
+            <span class="legal-num">04</span>
+            <div>
+                <h2>Third Party Services</h2>
+                <p>
+                    Spendly may rely on a small number of trusted providers, such as hosting
+                    services or font libraries, to deliver the app. These providers only receive
+                    the information needed to perform their function. We do not share your expense
+                    data with third parties for their own marketing purposes.
+                </p>
+            </div>
+        </div>
+
+        <div class="legal-item">
+            <span class="legal-num">05</span>
+            <div>
+                <h2>Contact Us</h2>
+                <p>
+                    If you have questions about this Privacy Policy or want to request access to or
+                    deletion of your data, reach out to us at
+                    <a href="mailto:privacy@example.com">privacy@example.com</a>.
+                    You can also review our <a href="{{ url_for('terms') }}">Terms and Conditions</a>.
+                </p>
+            </div>
+        </div>
+    </article>
+</section>
+
+<section class="cta-section">
+    <div class="cta-inner">
+        <h2 class="cta-title">Ready to take control?</h2>
+        <p class="cta-body">Start tracking every rupee with Spendly.</p>
+        <div class="legal-actions">
+            <a href="{{ url_for('register') }}" class="btn-primary">Create free account</a>
+            <a href="{{ url_for('landing') }}" class="btn-ghost">Back to home</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
